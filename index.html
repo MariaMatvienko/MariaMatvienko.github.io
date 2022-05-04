@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EasyCode</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav-bar secondary-text">
+        <div class="nav-bar-wrapper">
+          <div class="nav-logo-wrapper">
+            <i class="nav-logo"></i>
+            <div class="nav-title-container">
+              <div class="nav-title">EasyCode</div>
+            </div>
+          </div>
+
+          <div class="nav-menu-wrapper">
+            <span class="nav-menu-item">Що таке EasyCode?</span>
+            <span class="nav-menu-item">Новини</span>
+            <span class="nav-menu-item">Контакти</span>
+            <i class="nav-menu-icon"></i>
+          </div>
+
+          <div class="menu-button"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="page-wrapper">
+      <section class="registration-section">
+        <div class="registration-form-wrapper">
+          <div class="registration-form-image-wrapper">
+            <img
+              class="registration-form-image"
+              id="lang-img"
+              src="./Assets/C++.svg"
+              alt="lang-img"
+            />
+          </div>
+          <div class="form-card flex-column">
+            <div class="form-wrapper">
+              <h2 class="form-title">
+                Електронна черга до курсів програмування
+              </h2>
+              <form class="registration-form flex-column" action="submit">
+                <label class="form-label" for="name">Імʼя</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  pattern="[А-Я]{1}[а-я]{2,25}"
+                  title="Марія"
+                  placeholder="Введіть імʼя"
+                  required
+                />
+
+                <label class="form-label" for="phone" required>Телефон</label>
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0][0-9]{9}"
+                  title="Приклад: 095 780 84 65"
+                  placeholder="+38 (_) __ __ __"
+                  required
+                />
+
+                <label class="form-label" for="select"
+                  >Бажана мова програмування</label
+                >
+                <select
+                  class="form-input form-input-select"
+                  name=""
+                  id="select"
+                  required
+                >
+                  <option value="c++" selected>C++</option>
+                  <option value="java">Java</option>
+                  <option value="python">Python</option>
+                  <option value="javascript">Javascript</option>
+                  <option value="c-sharp">C#</option>
+                  <option value="go">Go</option>
+                </select>
+                <label class="form-label" for="select">Ваше місто</label>
+                <select
+                  class="form-input form-input-select"
+                  name=""
+                  id=""
+                  required
+                >
+                  <option value="kyiv">Київ</option>
+                  <option value="dnipro">Дніпро</option>
+                  <option value="kharkiv">Харків</option>
+                  <option value="lviv">Львів</option>
+                  <option value="poltava">Полтава</option>
+                </select>
+                <button class="form-submit-button" type="submit">
+                  Підключитися
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer secondary-text">
+      <span class="footer-credentials">
+        © 2022 My Space. Всі права захищені.
+      </span>
+    </footer>
+  </body>
+</html>
